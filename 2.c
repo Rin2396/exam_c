@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 float sumFoo (int n) {
-    float sum = 0, k;
+    float sum = 0, k = 1;
     for (int i = 1; i <= n; i++) {
-        k = (1 / i) / i;
+        k = k / (i * i);
         sum += k;
     }
     return sum;
